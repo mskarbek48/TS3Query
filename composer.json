@@ -1,0 +1,40 @@
+{
+    "name": "lukieer/ts3query",
+    "description": "A PHP framework to manage teamspeak servers.",
+    "keywords": [
+        "ts3",
+        "teamspeak 3"
+    ],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Maciej Skarbek",
+            "email": "macieqskarbek@gmail.com",
+            "homepage": "https://mskarbek.pl",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php" : ">=8.0.0"
+    },
+
+    "autoload": {
+        "psr-4": {
+            "Lukieer\\TS3Query\\": "src"
+        },
+        "files": [
+            "src/Adapters/ServerQuery.php",
+            "src/Adapters/FileTransfer.php"
+        ]
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Lukieer\\TS3Query\\": "tests"
+        }
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.0-dev"
+        }
+    }
+}
